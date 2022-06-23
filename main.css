@@ -39,6 +39,8 @@ button:hover{
     margin: auto;
 }
 
+.accent-color{ color: #E84545; }
+
 header{
     background-color: rgb(237,237,237);
 }
@@ -72,4 +74,35 @@ header a{
 
 header a:hover{
     color: #E84545;
+}
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(https://img.freepik.com/free-photo/dumbbells-fitness_335224-876.jpg?t=st=1655955929~exp=1655956529~hmac=36979f5a52617d2aa3e9da2feb27550d79c4663e48536a2529c6272a40d43bb7&w=996);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner h1{
+    color: white;
+}
+
+#nosotros{
+
+}
+
+#nosotros .container{
+    text-align: center;
+    padding: 200px 12px;
 }
