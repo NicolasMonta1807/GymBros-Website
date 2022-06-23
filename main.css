@@ -1,61 +1,28 @@
 *{
     box-sizing: border-box;
-    background-color: #e8e8e8;
-    font-family: monospace;
 }
 
-h1{
-    font-size: 3.5em;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-h2{
-    text-align: center;
-}
-
-/* .container{
-    min-width: 500px;
-    max-width: 1400px;
-} */
-
-.logo{
-    color: #e7645a;
-    display: block;
-}
-
-nav{
-    text-align: right;
-}
+h1{font-size: 2.5em;}
+h2{font-size: 1.75em;}
+p{font-size: 1.2em;}
+ul{list-style: none;}
+li{font-size: 1.2em;}
 
 body{
-    margin: 0;
+    font-family: monospace, sans-serif;
 }
 
 button{
-    border-radius: 5px;
-    font-size: 1em;
-    text-align: center;
-    border-width: 2px;
-    background-color: #e7645a;
-    padding: 5px 10px;
-    border: 1px solid black;
-    letter-spacing: 1px;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #F18805;
 }
 
-#banner{
-    padding: 50px;
-    /* background-image: url(https://d2nb51khh83712.cloudfront.net/images/large/10_proven_Fitness_3_1542d6757d.png); */
-}
-
-#nosotros{
-    
-}
-
-a:visited{
-    color: black;
-}
-
-footer{
-    text-align: right;
+button:hover{
+    background-color: #F0A202;
 }
