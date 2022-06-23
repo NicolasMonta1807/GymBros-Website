@@ -9,8 +9,13 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1{font-size: 2.5em;}
-h2{font-size: 1.75em;}
+h2{font-size: 2em;}
+h3{font-size: 1.5em;}
 p{font-size: 1.2em;}
 ul{list-style: none;}
 li{font-size: 1.2em;}
@@ -98,11 +103,116 @@ header a:hover{
     color: white;
 }
 
-#nosotros{
-
+#banner button{
+    font-size: 1.5em;
 }
 
 #nosotros .container{
     text-align: center;
     padding: 200px 12px;
+}
+
+#planes{
+    background-color: #2B2E4A;
+    color: white;
+    text-align: center;
+}
+
+#planes .container{
+    padding: 150px 12px;
+}
+
+#planes h2{
+    margin-top: 0;
+}
+
+#planes p{
+    display: none;
+}
+
+#planes .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+#planes h2{
+    font-size: 2.75em;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(https://img.freepik.com/free-photo/sportswoman-sportswear-training-gym_1157-30349.jpg?t=st=1655955929~exp=1655956529~hmac=7db0ebedd0e32abbe749040e34c80bdcf49ec40950d93bf04dee489ab3244f7c&w=996);
+}
+
+.carta:nth-child(2)
+{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(https://img.freepik.com/free-photo/stronger-young-muscular-caucasian-athlete-practicing-lunges-gym-with-barbell-male-model-doing-strength-exercises-training-his-lower-body-wellness-healthy-lifestyle-bodybuilding-concept_155003-36806.jpg?t=st=1655955929~exp=1655956529~hmac=629def8e682bbfd2d83b12614489ff35b552f0cbe0dd5dac5d6e5959e4cc4d1e&w=996);
+}
+
+.carta:nth-child(3)
+{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(https://img.freepik.com/free-photo/male-athlete-bodybuilder-working-out-gym_397170-1810.jpg?w=996);
+}
+
+#beneficios .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#beneficios li{
+    margin: 12px 0px;
+    font-weight: bold;
+}
+
+#afiliacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-color: #2B2E4A;
+    color: white;
+}
+
+#afiliacion h2{
+    font-size: 9vw;
+}
+
+#afiliacion button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100,100,100);
+    padding: 12px 0px;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
