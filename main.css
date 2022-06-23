@@ -9,6 +9,7 @@ html{
 body{
     font-family: monospace, sans-serif;
     margin: 0;
+    letter-spacing: 1px;
 }
 
 h1{font-size: 2.5em;}
@@ -30,6 +31,7 @@ button{
 }
 
 button:hover{
+    cursor: pointer;
     background-color: #903749;
 }
 
@@ -50,6 +52,10 @@ header{
     font-weight: bold;
     font-size: 1.6em;
     color: #E84545;
+}
+
+.logo:hover{
+    color: #2B2E4A;
 }
 
 header .container{
@@ -128,8 +134,8 @@ header a:hover{
 #planes .carta{
     background-position: center center;
     background-size: cover;
-    padding: 50px;
-    margin: 20px;
+    padding: 50px 0px;
+    margin: 30px;
     border-radius: 30px;
 }
 
@@ -140,8 +146,8 @@ header a:hover{
 .carta:first-child{
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
     )
     ,url(https://img.freepik.com/free-photo/sportswoman-sportswear-training-gym_1157-30349.jpg?t=st=1655955929~exp=1655956529~hmac=7db0ebedd0e32abbe749040e34c80bdcf49ec40950d93bf04dee489ab3244f7c&w=996);
 }
@@ -150,18 +156,18 @@ header a:hover{
 {
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
     )
     ,url(https://img.freepik.com/free-photo/stronger-young-muscular-caucasian-athlete-practicing-lunges-gym-with-barbell-male-model-doing-strength-exercises-training-his-lower-body-wellness-healthy-lifestyle-bodybuilding-concept_155003-36806.jpg?t=st=1655955929~exp=1655956529~hmac=629def8e682bbfd2d83b12614489ff35b552f0cbe0dd5dac5d6e5959e4cc4d1e&w=996);
 }
 
-.carta:nth-child(3)
+.carta:last-child
 {
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
     )
     ,url(https://img.freepik.com/free-photo/male-athlete-bodybuilder-working-out-gym_397170-1810.jpg?w=996);
 }
@@ -230,6 +236,10 @@ footer .container{
         padding-right: 10px;
     }
 
+    #banner h1{
+        font-size: 3em;
+    }
+
     #nosotros .container{
         display: flex;
         justify-content: space-evenly;
@@ -247,6 +257,7 @@ footer .container{
         background-position: center center;
         height: 500px;
         width: 400px;
+        border-radius: 20px;
     }
 
     #nosotros .text{
@@ -263,7 +274,75 @@ footer .container{
         margin-top: 0;
     }
 
+    #planes .ofertas{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #planes p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
     #planes .container{
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    
+    #planes h2{
+        font-size: 3em;
+    }
+
+    #planes h3{
+        margin-top: 0;
+    }
+
+    #planes .carta{
+        padding: 50px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    }
+
+    #beneficios{
+        background-size: 750px 500px;
+        background-repeat: no-repeat;
+        background-position: calc(100vw - 850px) 35px;
+    }
+
+    #beneficios .img-container{
+        background-image: url(https://img.freepik.com/free-photo/fit-blond-woman-with-perfect-smile-stylish-sportswear-looking-camera-holding-bottle-water-white-wall-demonstrate-muscles_273443-4534.jpg?t=st=1656001091~exp=1656001691~hmac=d4a299a9addfe7c64787c973ce79eb8e31ff33a57328d78d79c6f84d61368e16&w=1380);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        border-radius: 20px;
+    }
+
+    #beneficios .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #beneficios ul{
+        width: 50%;
+        text-align: initial;
+        padding-left: 50px;
+        max-width: 600px;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    #afiliacion h2{
+        font-size: 4em;
+    }
+
+    #afiliacion button{
+        font-size: 3em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
     }
 }
